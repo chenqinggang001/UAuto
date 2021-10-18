@@ -1,0 +1,288 @@
+2021-10-18 18:03:35.736 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: demo,获取课程信息, TestCase ID: 4b4001f1-9428-474c-856a-8a6929ac49b6
+2021-10-18 18:03:35.738 | INFO     | httprunner.runner:__run_step:292 - run step begin: 获取考试id >>>>>>
+2021-10-18 18:03:35.740 | INFO     | httprunner.runner:__run_step:292 - run step begin: 获取考试id >>>>>>
+2021-10-18 18:03:35.741 | INFO     | httprunner.runner:__run_step:292 - run step begin: 获取学生考试列表 >>>>>>
+2021-10-18 18:03:35.906 | DEBUG    | httprunner.client:request:186 - client IP: 192.168.10.146, Port: 59109
+2021-10-18 18:03:35.907 | DEBUG    | httprunner.client:request:194 - server IP: 121.36.22.149, Port: 443
+2021-10-18 18:03:35.907 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://courseapi.tongshike.cn/exams/student?pn=&ps=1&ocId=33988&userId=7449241
+headers  : {
+    "User-Agent": "python-requests/2.26.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Authorization": "0B103F5DF024C262140D0BC88FE64880",
+    "HRUN-Request-ID": "HRUN-4b4001f1-9428-474c-856a-8a6929ac49b6-415741"
+}
+cookies  : {}
+body     : None
+
+2021-10-18 18:03:35.908 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Mon, 18 Oct 2021 10:03:35 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "pn": 1,
+    "ps": 1,
+    "total": 2,
+    "examList": [
+        {
+            "examId": 11600,
+            "answerTimes": 0,
+            "title": "test",
+            "examTime": 60,
+            "limitTimes": 0,
+            "isLimitTimes": "0",
+            "lateTime": 0,
+            "creatorName": "CqgAutotea",
+            "isLate": "0",
+            "examState": 2,
+            "examType": 3,
+            "isInExam": 1,
+            "notEnoughTime": 1,
+            "showExamRecord": 1,
+            "showExamRecodAfterDate": 888,
+            "examFinish": "1",
+            "allExamBatchEnd": 0,
+            "examRelationTimeList": [
+                {
+                    "endTime": 1704080880000,
+                    "startTime": 1633751280000
+                }
+            ]
+        }
+    ]
+}
+
+2021-10-18 18:03:35.908 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 164.79 ms, response_length: 0 bytes
+2021-10-18 18:03:35.908 | INFO     | httprunner.response:extract:179 - extract mapping: {'examId': 11600}
+2021-10-18 18:03:35.908 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2021-10-18 18:03:35.908 | INFO     | httprunner.runner:__run_step:304 - run step end: 获取学生考试列表 <<<<<<
+
+2021-10-18 18:03:35.908 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'examId': 11600}
+2021-10-18 18:03:35.909 | INFO     | httprunner.runner:__run_step:304 - run step end: 获取考试id <<<<<<
+
+2021-10-18 18:03:35.909 | INFO     | httprunner.runner:__run_step:292 - run step begin: 进入考试须知页面 >>>>>>
+2021-10-18 18:03:35.959 | DEBUG    | httprunner.client:request:186 - client IP: 192.168.10.146, Port: 59109
+2021-10-18 18:03:35.960 | DEBUG    | httprunner.client:request:194 - server IP: 121.36.22.149, Port: 443
+2021-10-18 18:03:35.960 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://courseapi.tongshike.cn/exams/user/study/openPaperFromOrg?examId=11600&fromWhere=1
+headers  : {
+    "User-Agent": "python-requests/2.26.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Authorization": "0B103F5DF024C262140D0BC88FE64880",
+    "HRUN-Request-ID": "HRUN-4b4001f1-9428-474c-856a-8a6929ac49b6-415910"
+}
+cookies  : {}
+body     : None
+
+2021-10-18 18:03:35.961 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Mon, 18 Oct 2021 10:03:35 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 1,
+    "message": "成功",
+    "result": {
+        "attendTimes": 0,
+        "examUserId": 1483250,
+        "fromWhere": "1",
+        "exam": {
+            "examId": 11600,
+            "paperId": ";114266;",
+            "paperInfo": "[{\"isDisable\":0,\"paperId\":\"114266\",\"paperName\":\"测试试卷\",\"score\":26}]",
+            "title": "test",
+            "type": "3",
+            "isLimitTimes": "0",
+            "limitTimes": 0,
+            "createTime": 1633751255000,
+            "operater": 7449240,
+            "orgId": 9394,
+            "ocId": 33988,
+            "isLate": "0",
+            "lateTime": 0,
+            "examTime": 60,
+            "examFinish": "1",
+            "passScore": 1.0,
+            "showExamRecord": 1,
+            "showExamRecodAfterDate": 888,
+            "deprecatedPaper": "",
+            "examType": 3,
+            "leaveLimit": 0,
+            "leaveLimitTime": 0,
+            "verificationMethod": 0,
+            "allowUnchecked": 0,
+            "paperType": 1,
+            "enableDeviceMonitor": 0,
+            "enableIPMonitor": 0,
+            "enableSnapshotMonitor": 0,
+            "commitPaperTime": 0,
+            "examInstructions": "<p>&nbsp;1. 考试过程中，请勿离开答题界面。<br />&nbsp;2. 答题时请注意剩余答题时间，时间用完将自动交卷。<br />&nbsp;3. 交卷前请仔细检查是否全部作答，以免漏题。<br />&nbsp;4. 系统会定时保存你的答题记录，若因故障中断，请尽快在结束前重新进入考试。<br />&nbsp;5. 考试如果允许多次答题，成绩以最高一次为准。</p>",
+            "enableUpload": 0
+        },
+        "userId": 7449241,
+        "countTime": 0,
+        "startTime": 1633751280000,
+        "endTime": 1704080880000,
+        "examIP": "219.140.141.240",
+        "orgId": 9394,
+        "isJoinExam": 1,
+        "isShowScore": 3,
+        "examRelationTimeList": [
+            {
+                "startTime": 1633751280000,
+                "endTime": 1704080880000,
+                "status": 2
+            }
+        ]
+    }
+}
+
+2021-10-18 18:03:35.961 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 49.61 ms, response_length: 0 bytes
+2021-10-18 18:03:35.962 | INFO     | httprunner.response:extract:179 - extract mapping: {'OpenPaperFromOrg': {'code': 1, 'message': '成功', 'result': {'attendTimes': 0, 'examUserId': 1483250, 'fromWhere': '1', 'exam': {'examId': 11600, 'paperId': ';114266;', 'paperInfo': '[{"isDisable":0,"paperId":"114266","paperName":"测试试卷","score":26}]', 'title': 'test', 'type': '3', 'isLimitTimes': '0', 'limitTimes': 0, 'createTime': 1633751255000, 'operater': 7449240, 'orgId': 9394, 'ocId': 33988, 'isLate': '0', 'lateTime': 0, 'examTime': 60, 'examFinish': '1', 'passScore': 1.0, 'showExamRecord': 1, 'showExamRecodAfterDate': 888, 'deprecatedPaper': '', 'examType': 3, 'leaveLimit': 0, 'leaveLimitTime': 0, 'verificationMethod': 0, 'allowUnchecked': 0, 'paperType': 1, 'enableDeviceMonitor': 0, 'enableIPMonitor': 0, 'enableSnapshotMonitor': 0, 'commitPaperTime': 0, 'examInstructions': '<p>&nbsp;1. 考试过程中，请勿离开答题界面。<br />&nbsp;2. 答题时请注意剩余答题时间，时间用完将自动交卷。<br />&nbsp;3. 交卷前请仔细检查是否全部作答，以免漏题。<br />&nbsp;4. 系统会定时保存你的答题记录，若因故障中断，请尽快在结束前重新进入考试。<br />&nbsp;5. 考试如果允许多次答题，成绩以最高一次为准。</p>', 'enableUpload': 0}, 'userId': 7449241, 'countTime': 0, 'startTime': 1633751280000, 'endTime': 1704080880000, 'examIP': '219.140.141.240', 'orgId': 9394, 'isJoinExam': 1, 'isShowScore': 3, 'examRelationTimeList': [{'startTime': 1633751280000, 'endTime': 1704080880000, 'status': 2}]}}}
+2021-10-18 18:03:35.962 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2021-10-18 18:03:35.962 | INFO     | httprunner.runner:__run_step:304 - run step end: 进入考试须知页面 <<<<<<
+
+2021-10-18 18:03:35.963 | INFO     | httprunner.runner:__run_step_testcase:286 - export variables: {'OpenPaperFromOrg': {'code': 1, 'message': '成功', 'result': {'attendTimes': 0, 'examUserId': 1483250, 'fromWhere': '1', 'exam': {'examId': 11600, 'paperId': ';114266;', 'paperInfo': '[{"isDisable":0,"paperId":"114266","paperName":"测试试卷","score":26}]', 'title': 'test', 'type': '3', 'isLimitTimes': '0', 'limitTimes': 0, 'createTime': 1633751255000, 'operater': 7449240, 'orgId': 9394, 'ocId': 33988, 'isLate': '0', 'lateTime': 0, 'examTime': 60, 'examFinish': '1', 'passScore': 1.0, 'showExamRecord': 1, 'showExamRecodAfterDate': 888, 'deprecatedPaper': '', 'examType': 3, 'leaveLimit': 0, 'leaveLimitTime': 0, 'verificationMethod': 0, 'allowUnchecked': 0, 'paperType': 1, 'enableDeviceMonitor': 0, 'enableIPMonitor': 0, 'enableSnapshotMonitor': 0, 'commitPaperTime': 0, 'examInstructions': '<p>&nbsp;1. 考试过程中，请勿离开答题界面。<br />&nbsp;2. 答题时请注意剩余答题时间，时间用完将自动交卷。<br />&nbsp;3. 交卷前请仔细检查是否全部作答，以免漏题。<br />&nbsp;4. 系统会定时保存你的答题记录，若因故障中断，请尽快在结束前重新进入考试。<br />&nbsp;5. 考试如果允许多次答题，成绩以最高一次为准。</p>', 'enableUpload': 0}, 'userId': 7449241, 'countTime': 0, 'startTime': 1633751280000, 'endTime': 1704080880000, 'examIP': '219.140.141.240', 'orgId': 9394, 'isJoinExam': 1, 'isShowScore': 3, 'examRelationTimeList': [{'startTime': 1633751280000, 'endTime': 1704080880000, 'status': 2}]}}}
+2021-10-18 18:03:35.963 | INFO     | httprunner.runner:__run_step:304 - run step end: 获取考试id <<<<<<
+
+2021-10-18 18:03:35.964 | INFO     | httprunner.runner:__run_step:292 - run step begin: 进入考试须知页面 >>>>>>
+2021-10-18 18:03:36.121 | DEBUG    | httprunner.client:request:186 - client IP: 192.168.10.146, Port: 59111
+2021-10-18 18:03:36.121 | DEBUG    | httprunner.client:request:194 - server IP: 121.36.22.149, Port: 443
+2021-10-18 18:03:36.122 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://utestapi.tongshike.cn/exams/user/study/openPaper?examId=11600&ip=192.168.10.146&submitType=2&token=
+headers  : {
+    "User-Agent": "python-requests/2.26.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Content-Type": "application/json",
+    "Authorization": "0B103F5DF024C262140D0BC88FE64880",
+    "HRUN-Request-ID": "HRUN-4b4001f1-9428-474c-856a-8a6929ac49b6-415965",
+    "Content-Length": "39"
+}
+cookies  : {}
+body     : {
+    "userId": "7449241",
+    "orgId": "33988"
+}
+
+2021-10-18 18:03:36.122 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Mon, 18 Oct 2021 10:03:36 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "*",
+    "Access-Control-Allow-Methods": "*"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 1,
+    "message": "成功",
+    "result": {
+        "exam": {
+            "examId": 11600,
+            "paperId": ";114266;",
+            "paperInfo": "[{\"isDisable\":0,\"paperId\":\"114266\",\"paperName\":\"测试试卷\",\"score\":26}]",
+            "title": "test",
+            "isAvailable": null,
+            "type": "3",
+            "isLimitTimes": "0",
+            "limitTimes": 0,
+            "startTime": null,
+            "endTime": null,
+            "createTime": 1633751255000,
+            "operater": 7449240,
+            "orgId": 9394,
+            "ocId": 33988,
+            "isLate": "0",
+            "lateTime": 0,
+            "examTime": 60,
+            "examFinish": "1",
+            "parentId": null,
+            "orderIndex": null,
+            "scope": null,
+            "kind": null,
+            "passScore": 1.0,
+            "showExamRecord": 1,
+            "showExamRecodAfterDate": 888,
+            "deprecatedPaper": "",
+            "examType": 3,
+            "leaveLimit": 0,
+            "leaveLimitTime": 0,
+            "verificationMethod": 0,
+            "allowUnchecked": 0,
+            "paperType": 1,
+            "extractPaperId": null,
+            "isAnonymous": null,
+            "enableDeviceMonitor": 0,
+            "enableIPMonitor": 0,
+            "enableSnapshotMonitor": 0,
+            "commitPaperTime": 0,
+            "examInstructions": "<p>&nbsp;1. 考试过程中，请勿离开答题界面。<br />&nbsp;2. 答题时请注意剩余答题时间，时间用完将自动交卷。<br />&nbsp;3. 交卷前请仔细检查是否全部作答，以免漏题。<br />&nbsp;4. 系统会定时保存你的答题记录，若因故障中断，请尽快在结束前重新进入考试。<br />&nbsp;5. 考试如果允许多次答题，成绩以最高一次为准。</p>",
+            "enableUpload": 0
+        },
+        "newPaper": null,
+        "autoSavedKey": "MYAUTOEXAM_ANSWER_7449241_11600_114266",
+        "addTime": 0,
+        "endTime": "2024-01-01 11:48:00",
+        "examUserId": 1483250,
+        "resourcesServer": "https://leicloud.ulearning.cn/",
+        "currentTime": "2021-10-18 18:03:36",
+        "examRelationId": 103776,
+        "userId": 7449241,
+        "paperId": 114266
+    }
+}
+
+2021-10-18 18:03:36.123 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 155.4 ms, response_length: 0 bytes
+2021-10-18 18:03:36.123 | INFO     | httprunner.response:extract:179 - extract mapping: {'OpenPaper': {'code': 1, 'message': '成功', 'result': {'exam': {'examId': 11600, 'paperId': ';114266;', 'paperInfo': '[{"isDisable":0,"paperId":"114266","paperName":"测试试卷","score":26}]', 'title': 'test', 'isAvailable': None, 'type': '3', 'isLimitTimes': '0', 'limitTimes': 0, 'startTime': None, 'endTime': None, 'createTime': 1633751255000, 'operater': 7449240, 'orgId': 9394, 'ocId': 33988, 'isLate': '0', 'lateTime': 0, 'examTime': 60, 'examFinish': '1', 'parentId': None, 'orderIndex': None, 'scope': None, 'kind': None, 'passScore': 1.0, 'showExamRecord': 1, 'showExamRecodAfterDate': 888, 'deprecatedPaper': '', 'examType': 3, 'leaveLimit': 0, 'leaveLimitTime': 0, 'verificationMethod': 0, 'allowUnchecked': 0, 'paperType': 1, 'extractPaperId': None, 'isAnonymous': None, 'enableDeviceMonitor': 0, 'enableIPMonitor': 0, 'enableSnapshotMonitor': 0, 'commitPaperTime': 0, 'examInstructions': '<p>&nbsp;1. 考试过程中，请勿离开答题界面。<br />&nbsp;2. 答题时请注意剩余答题时间，时间用完将自动交卷。<br />&nbsp;3. 交卷前请仔细检查是否全部作答，以免漏题。<br />&nbsp;4. 系统会定时保存你的答题记录，若因故障中断，请尽快在结束前重新进入考试。<br />&nbsp;5. 考试如果允许多次答题，成绩以最高一次为准。</p>', 'enableUpload': 0}, 'newPaper': None, 'autoSavedKey': 'MYAUTOEXAM_ANSWER_7449241_11600_114266', 'addTime': 0, 'endTime': '2024-01-01 11:48:00', 'examUserId': 1483250, 'resourcesServer': 'https://leicloud.ulearning.cn/', 'currentTime': '2021-10-18 18:03:36', 'examRelationId': 103776, 'userId': 7449241, 'paperId': 114266}}}
+2021-10-18 18:03:36.123 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2021-10-18 18:03:36.123 | INFO     | httprunner.runner:__run_step:304 - run step end: 进入考试须知页面 <<<<<<
+
+2021-10-18 18:03:36.124 | INFO     | httprunner.runner:test_start:460 - generate testcase log: D:\ExamAuto\logs\4b4001f1-9428-474c-856a-8a6929ac49b6.run.log
