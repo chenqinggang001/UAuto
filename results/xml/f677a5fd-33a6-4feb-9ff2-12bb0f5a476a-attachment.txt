@@ -1,0 +1,443 @@
+2021-10-19 19:34:41.023 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: 查看课堂资源, TestCase ID: 3b84b32d-6092-4030-9818-96040fe9f876
+2021-10-19 19:34:41.024 | INFO     | httprunner.runner:__run_step:292 - run step begin: /wisdomClassroom/getClassroomList >>>>>>
+2021-10-19 19:34:41.270 | DEBUG    | httprunner.client:request:186 - client IP: 192.168.10.146, Port: 49703
+2021-10-19 19:34:41.271 | DEBUG    | httprunner.client:request:194 - server IP: 121.36.22.149, Port: 443
+2021-10-19 19:34:41.271 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://courseapi.tongshike.cn/wisdomClassroom/getClassroomList?ocId=33988&classId=&teacherId=7449240&status=&pageNum=1&pageSize=10&lang=zh
+headers  : {
+    "User-Agent": "python-requests/2.26.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "A0D54F0F817F084C62383ED695FF947E",
+    "Content-Type": "application/json",
+    "HRUN-Request-ID": "HRUN-3b84b32d-6092-4030-9818-96040fe9f876-281026"
+}
+cookies  : {}
+body     : None
+
+2021-10-19 19:34:41.272 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Tue, 19 Oct 2021 11:34:41 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "total": 4,
+    "teacherName": "CqgAutotea",
+    "list": [
+        {
+            "id": 1625,
+            "title": "09-24 星期五 17:38 课堂",
+            "userId": 7449240,
+            "createTime": 1632476268000,
+            "ocId": 33988,
+            "status": 0,
+            "beginTime": 1632476268000,
+            "classes": [
+                {
+                    "classId": 357175,
+                    "className": "测试班级3"
+                },
+                {
+                    "classId": 357174,
+                    "className": "测试班级2"
+                },
+                {
+                    "classId": 357173,
+                    "className": "测试班级1"
+                }
+            ],
+            "activityNum": 5,
+            "demonstrationNum": 1
+        },
+        {
+            "id": 1623,
+            "title": "09-24 星期五 17:35 课堂",
+            "userId": 7449240,
+            "createTime": 1632476037000,
+            "ocId": 33988,
+            "status": 0,
+            "beginTime": 1632476037000,
+            "classes": [
+                {
+                    "classId": 357175,
+                    "className": "测试班级3"
+                },
+                {
+                    "classId": 357174,
+                    "className": "测试班级2"
+                },
+                {
+                    "classId": 357173,
+                    "className": "测试班级1"
+                }
+            ],
+            "activityNum": 0,
+            "demonstrationNum": 0
+        },
+        {
+            "id": 1622,
+            "title": "09-24 星期五 17:34 课堂",
+            "userId": 7449240,
+            "createTime": 1632475988000,
+            "ocId": 33988,
+            "status": 0,
+            "beginTime": 1632475988000,
+            "classes": [
+                {
+                    "classId": 357175,
+                    "className": "测试班级3"
+                },
+                {
+                    "classId": 357174,
+                    "className": "测试班级2"
+                },
+                {
+                    "classId": 357173,
+                    "className": "测试班级1"
+                }
+            ],
+            "activityNum": 0,
+            "demonstrationNum": 0
+        },
+        {
+            "id": 1632,
+            "title": "09-29 星期三 15:57 课堂",
+            "userId": 7449240,
+            "createTime": 1632902160000,
+            "ocId": 33988,
+            "status": 1,
+            "classes": [
+                {
+                    "classId": 357175,
+                    "className": "测试班级3"
+                },
+                {
+                    "classId": 357174,
+                    "className": "测试班级2"
+                },
+                {
+                    "classId": 357173,
+                    "className": "测试班级1"
+                }
+            ],
+            "activityNum": 0,
+            "demonstrationNum": 0
+        }
+    ],
+    "ocName": "自动化测试课程"
+}
+
+2021-10-19 19:34:41.272 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 244.11 ms, response_length: 0 bytes
+2021-10-19 19:34:41.272 | INFO     | httprunner.response:extract:179 - extract mapping: {'classroomid': 1625}
+2021-10-19 19:34:41.272 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2021-10-19 19:34:41.272 | INFO     | httprunner.runner:__run_step:304 - run step end: /wisdomClassroom/getClassroomList <<<<<<
+
+2021-10-19 19:34:41.273 | INFO     | httprunner.runner:__run_step:292 - run step begin: /course/content >>>>>>
+2021-10-19 19:34:41.310 | DEBUG    | httprunner.client:request:186 - client IP: 192.168.10.146, Port: 49703
+2021-10-19 19:34:41.311 | DEBUG    | httprunner.client:request:194 - server IP: 121.36.22.149, Port: 443
+2021-10-19 19:34:41.311 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://courseapi.tongshike.cn/course/content?ocId=33988&type=&parentId=0&teacherId=7449240&pn=1&ps=30&version=2
+headers  : {
+    "User-Agent": "python-requests/2.26.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "AUTHORIZATION": "A0D54F0F817F084C62383ED695FF947E",
+    "HRUN-Request-ID": "HRUN-3b84b32d-6092-4030-9818-96040fe9f876-281273"
+}
+cookies  : {}
+body     : None
+
+2021-10-19 19:34:41.312 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Tue, 19 Oct 2021 11:34:41 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "pageNum": 1,
+    "pageSize": 30,
+    "total": 10,
+    "list": [
+        {
+            "id": 551202,
+            "ocId": 33988,
+            "contentId": 1018492,
+            "downloadTimes": 0,
+            "viewTimes": 0,
+            "creator": 7449240,
+            "createTime": 1632966318000,
+            "name": "CqgAutotea",
+            "title": "【4K-HDR】东京雨夜｜尼康夜神NIKKOR-Z-58mm-f-0.95-S-Noct-_P1.-SDR_(1).mp4",
+            "parentId": 0,
+            "type": 1,
+            "share": 1,
+            "localType": 0,
+            "contentSize": 228051064,
+            "mimeType": "mp4",
+            "remark": "217.5MB",
+            "location": "【4K-HDR】东京雨夜｜尼康夜神NIKKOR-Z-58mm-f-0.95-S-Noct-_P1.-SDR_.mp4"
+        },
+        {
+            "id": 551203,
+            "ocId": 33988,
+            "contentId": 1018493,
+            "downloadTimes": 0,
+            "viewTimes": 0,
+            "creator": 7449240,
+            "createTime": 1632966318000,
+            "name": "CqgAutotea",
+            "title": "912M视频(1).mp4",
+            "parentId": 0,
+            "type": 1,
+            "share": 1,
+            "localType": 0,
+            "contentSize": 956750983,
+            "mimeType": "mp4",
+            "remark": "912.4MB",
+            "location": "912M视频.mp4"
+        },
+        {
+            "id": 551201,
+            "ocId": 33988,
+            "contentId": 1018491,
+            "downloadTimes": 0,
+            "viewTimes": 0,
+            "creator": 7449240,
+            "createTime": 1632966083000,
+            "name": "CqgAutotea",
+            "title": "武汉.jpg",
+            "parentId": 0,
+            "type": 3,
+            "share": 1,
+            "localType": 0,
+            "contentSize": 607804,
+            "mimeType": "jpg",
+            "remark": "593.6KB",
+            "location": "武汉.jpg"
+        },
+        {
+            "id": 551200,
+            "ocId": 33988,
+            "contentId": 1018490,
+            "downloadTimes": 0,
+            "viewTimes": 0,
+            "creator": 7449240,
+            "createTime": 1632966067000,
+            "name": "CqgAutotea",
+            "title": "weekends.mp3",
+            "parentId": 0,
+            "type": 2,
+            "share": 1,
+            "localType": 0,
+            "contentSize": 959531,
+            "mimeType": "mp3",
+            "remark": "937.0KB",
+            "location": "weekends.mp3"
+        },
+        {
+            "id": 551199,
+            "ocId": 33988,
+            "contentId": 1018489,
+            "downloadTimes": 0,
+            "viewTimes": 0,
+            "creator": 7449240,
+            "createTime": 1632966045000,
+            "name": "CqgAutotea",
+            "title": "1 流体流动.pptx",
+            "parentId": 0,
+            "type": 4,
+            "share": 1,
+            "localType": 0,
+            "contentSize": 9170856,
+            "mimeType": "pptx",
+            "remark": "8.7MB",
+            "location": "1 流体流动.pptx"
+        },
+        {
+            "id": 551191,
+            "ocId": 33988,
+            "contentId": 1018481,
+            "downloadTimes": 0,
+            "viewTimes": 0,
+            "creator": 7449240,
+            "createTime": 1632965933000,
+            "name": "CqgAutotea",
+            "title": "第七章其他1",
+            "parentId": 0,
+            "type": 4,
+            "share": 1,
+            "localType": 0,
+            "contentSize": 13824,
+            "mimeType": "doc",
+            "remark": "13.0KB",
+            "location": "resource/59/487135/2c83e081-8429-4b5e-a439-9bf389f86140.doc"
+        },
+        {
+            "id": 551194,
+            "ocId": 33988,
+            "contentId": 1018484,
+            "downloadTimes": 0,
+            "viewTimes": 0,
+            "creator": 7449240,
+            "createTime": 1632965933000,
+            "name": "CqgAutotea",
+            "title": "第七章视频(1)",
+            "parentId": 0,
+            "type": 1,
+            "share": 1,
+            "localType": 0,
+            "contentSize": 104664184,
+            "mimeType": "mp4",
+            "remark": "99.8MB",
+            "location": "resource/59/487135/7d2bf765-fbc8-4a1f-a6be-319999c7dcb7.mp4"
+        },
+        {
+            "id": 551195,
+            "ocId": 33988,
+            "contentId": 1018485,
+            "downloadTimes": 0,
+            "viewTimes": 0,
+            "creator": 7449240,
+            "createTime": 1632965933000,
+            "name": "CqgAutotea",
+            "title": "第七章文献",
+            "parentId": 0,
+            "type": 4,
+            "share": 1,
+            "localType": 0,
+            "contentSize": 446752,
+            "mimeType": "pdf",
+            "remark": "436.0KB",
+            "location": "resource/59/487135/5cc5c16f-8bfb-4d04-bef6-9ff6a6886d59.pdf"
+        },
+        {
+            "id": 551197,
+            "ocId": 33988,
+            "contentId": 1018487,
+            "downloadTimes": 0,
+            "viewTimes": 0,
+            "creator": 7449240,
+            "createTime": 1632965933000,
+            "name": "CqgAutotea",
+            "title": "第七章ppt",
+            "parentId": 0,
+            "type": 4,
+            "share": 1,
+            "localType": 0,
+            "contentSize": 2191360,
+            "mimeType": "ppt",
+            "remark": "2.1MB",
+            "location": "resource/59/487135/e8a96531-29a8-41dd-ab3a-5f2214827972.ppt"
+        },
+        {
+            "id": 551190,
+            "ocId": 33988,
+            "contentId": 1018480,
+            "downloadTimes": 0,
+            "viewTimes": 0,
+            "creator": 7449240,
+            "createTime": 1632965932000,
+            "name": "CqgAutotea",
+            "title": "第七章其他",
+            "parentId": 0,
+            "type": 4,
+            "share": 1,
+            "localType": 0,
+            "contentSize": 18944,
+            "mimeType": "doc",
+            "remark": "18.0KB",
+            "location": "resource/59/487135/a80a37e5-afe2-449b-9d99-fafe02381ee8.doc"
+        }
+    ]
+}
+
+2021-10-19 19:34:41.312 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 36.8 ms, response_length: 0 bytes
+2021-10-19 19:34:41.313 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2021-10-19 19:34:41.313 | INFO     | httprunner.runner:__run_step:304 - run step end: /course/content <<<<<<
+
+2021-10-19 19:34:41.313 | INFO     | httprunner.runner:__run_step:292 - run step begin: 获取资源播放记录 >>>>>>
+2021-10-19 19:34:41.348 | DEBUG    | httprunner.client:request:186 - client IP: 192.168.10.146, Port: 49703
+2021-10-19 19:34:41.349 | DEBUG    | httprunner.client:request:194 - server IP: 121.36.22.149, Port: 443
+2021-10-19 19:34:41.349 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://courseapi.tongshike.cn/wisdomClassroom/getResouceRecord?classroomId=1625
+headers  : {
+    "User-Agent": "python-requests/2.26.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "AUTHORIZATION": "A0D54F0F817F084C62383ED695FF947E",
+    "HRUN-Request-ID": "HRUN-3b84b32d-6092-4030-9818-96040fe9f876-281314"
+}
+cookies  : {}
+body     : None
+
+2021-10-19 19:34:41.350 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Tue, 19 Oct 2021 11:34:41 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 1,
+    "message": "成功",
+    "result": [
+        {
+            "contentId": 1018489,
+            "location": "1 流体流动.pptx",
+            "id": 551199,
+            "title": "1 流体流动.pptx",
+            "contentType": 4
+        }
+    ]
+}
+
+2021-10-19 19:34:41.350 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 33.75 ms, response_length: 0 bytes
+2021-10-19 19:34:41.351 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2021-10-19 19:34:41.351 | INFO     | httprunner.runner:__run_step:304 - run step end: 获取资源播放记录 <<<<<<
+
+2021-10-19 19:34:41.352 | INFO     | httprunner.runner:test_start:460 - generate testcase log: D:\ExamAuto\logs\3b84b32d-6092-4030-9818-96040fe9f876.run.log

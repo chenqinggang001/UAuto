@@ -1,0 +1,157 @@
+2021-10-19 19:34:42.354 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: 教师置顶讨论, TestCase ID: b321253b-4431-4dbe-9926-9696a3c81324
+2021-10-19 19:34:42.355 | INFO     | httprunner.runner:__run_step:292 - run step begin: /topic/selectInfo >>>>>>
+2021-10-19 19:34:42.524 | DEBUG    | httprunner.client:request:186 - client IP: 192.168.10.146, Port: 49712
+2021-10-19 19:34:42.524 | DEBUG    | httprunner.client:request:194 - server IP: 121.36.22.149, Port: 443
+2021-10-19 19:34:42.525 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://courseapi.tongshike.cn/topic/selectInfo?ocId=33988&discussionId=&type=2
+headers  : {
+    "User-Agent": "python-requests/2.26.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "application/json, text/plain, */*",
+    "Connection": "keep-alive",
+    "Authorization": "A0D54F0F817F084C62383ED695FF947E",
+    "HRUN-Request-ID": "HRUN-b321253b-4431-4dbe-9926-9696a3c81324-282355"
+}
+cookies  : {}
+body     : None
+
+2021-10-19 19:34:42.526 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Tue, 19 Oct 2021 11:34:43 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 1,
+    "message": "成功",
+    "result": [
+        {
+            "id": 24473,
+            "name": "测试"
+        },
+        {
+            "id": 24432,
+            "name": "测试"
+        }
+    ]
+}
+
+2021-10-19 19:34:42.527 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 168.71 ms, response_length: 0 bytes
+2021-10-19 19:34:42.527 | INFO     | httprunner.response:extract:179 - extract mapping: {'discussionId': 24473}
+2021-10-19 19:34:42.527 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2021-10-19 19:34:42.527 | INFO     | httprunner.response:validate:249 - assert body.message equal 成功(str)	==> pass
+2021-10-19 19:34:42.527 | INFO     | httprunner.runner:__run_step:304 - run step end: /topic/selectInfo <<<<<<
+
+2021-10-19 19:34:42.527 | INFO     | httprunner.runner:__run_step:292 - run step begin: /forum/topping >>>>>>
+2021-10-19 19:34:42.574 | DEBUG    | httprunner.client:request:186 - client IP: 192.168.10.146, Port: 49712
+2021-10-19 19:34:42.574 | DEBUG    | httprunner.client:request:194 - server IP: 121.36.22.149, Port: 443
+2021-10-19 19:34:42.575 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : https://courseapi.tongshike.cn/forum/topping?ocId=33988&discussionId=24473&type=1&lang=zh
+headers  : {
+    "User-Agent": "python-requests/2.26.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "A0D54F0F817F084C62383ED695FF947E",
+    "Content-Type": "application/json",
+    "HRUN-Request-ID": "HRUN-b321253b-4431-4dbe-9926-9696a3c81324-282528",
+    "Content-Length": "0"
+}
+cookies  : {}
+body     : None
+
+2021-10-19 19:34:42.575 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Tue, 19 Oct 2021 11:34:43 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 1,
+    "message": "成功",
+    "result": 1
+}
+
+2021-10-19 19:34:42.576 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 45.89 ms, response_length: 0 bytes
+2021-10-19 19:34:42.576 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2021-10-19 19:34:42.577 | INFO     | httprunner.response:validate:249 - assert body.message equal 成功(str)	==> pass
+2021-10-19 19:34:42.577 | INFO     | httprunner.runner:__run_step:304 - run step end: /forum/topping <<<<<<
+
+2021-10-19 19:34:42.578 | INFO     | httprunner.runner:__run_step:292 - run step begin: /forum/topping >>>>>>
+2021-10-19 19:34:42.625 | DEBUG    | httprunner.client:request:186 - client IP: 192.168.10.146, Port: 49712
+2021-10-19 19:34:42.626 | DEBUG    | httprunner.client:request:194 - server IP: 121.36.22.149, Port: 443
+2021-10-19 19:34:42.626 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : PUT
+url      : https://courseapi.tongshike.cn/forum/topping?ocId=33988&discussionId=24473&type=0&lang=zh
+headers  : {
+    "User-Agent": "python-requests/2.26.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "A0D54F0F817F084C62383ED695FF947E",
+    "Content-Type": "application/json",
+    "HRUN-Request-ID": "HRUN-b321253b-4431-4dbe-9926-9696a3c81324-282579",
+    "Content-Length": "0"
+}
+cookies  : {}
+body     : None
+
+2021-10-19 19:34:42.626 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Tue, 19 Oct 2021 11:34:43 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 1,
+    "message": "成功",
+    "result": 1
+}
+
+2021-10-19 19:34:42.626 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 46.11 ms, response_length: 0 bytes
+2021-10-19 19:34:42.627 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2021-10-19 19:34:42.627 | INFO     | httprunner.response:validate:249 - assert body.message equal 成功(str)	==> pass
+2021-10-19 19:34:42.627 | INFO     | httprunner.runner:__run_step:304 - run step end: /forum/topping <<<<<<
+
+2021-10-19 19:34:42.627 | INFO     | httprunner.runner:test_start:460 - generate testcase log: D:\ExamAuto\logs\b321253b-4431-4dbe-9926-9696a3c81324.run.log

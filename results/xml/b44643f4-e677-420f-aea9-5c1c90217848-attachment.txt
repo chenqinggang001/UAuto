@@ -1,0 +1,300 @@
+2021-10-19 19:34:35.159 | INFO     | httprunner.loader:load_dot_env_file:127 - Loading environment variables from D:\ExamAuto\.env
+2021-10-19 19:34:35.161 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: HOST
+2021-10-19 19:34:35.161 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: TestHOST
+2021-10-19 19:34:35.161 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: TestHOSTAPP
+2021-10-19 19:34:35.161 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: UtestHOST
+2021-10-19 19:34:35.161 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: THOST
+2021-10-19 19:34:35.161 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: LoginNameCourseAdmin
+2021-10-19 19:34:35.162 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: LoginNametea
+2021-10-19 19:34:35.162 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: LoginNameteaC
+2021-10-19 19:34:35.162 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: Password
+2021-10-19 19:34:35.162 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu001
+2021-10-19 19:34:35.162 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu002
+2021-10-19 19:34:35.162 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu003
+2021-10-19 19:34:35.162 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu004
+2021-10-19 19:34:35.162 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu005
+2021-10-19 19:34:35.162 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu006
+2021-10-19 19:34:35.162 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu007
+2021-10-19 19:34:35.162 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu008
+2021-10-19 19:34:35.162 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu009
+2021-10-19 19:34:35.162 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu010
+2021-10-19 19:34:35.163 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu011
+2021-10-19 19:34:35.163 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu012
+2021-10-19 19:34:35.163 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu013
+2021-10-19 19:34:35.163 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu014
+2021-10-19 19:34:35.163 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu015
+2021-10-19 19:34:35.163 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu016
+2021-10-19 19:34:35.163 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu017
+2021-10-19 19:34:35.163 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu018
+2021-10-19 19:34:35.163 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu019
+2021-10-19 19:34:35.163 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: stu020
+2021-10-19 19:34:35.163 | DEBUG    | httprunner.utils:set_os_environ:33 - Set OS environment variable: key
+2021-10-19 19:34:38.710 | INFO     | httprunner.runner:test_start:450 - Start to run testcase: 教师创建课堂, TestCase ID: 9b6e66fd-eb80-4c60-90c7-33bed01417f8
+2021-10-19 19:34:38.711 | INFO     | httprunner.runner:__run_step:292 - run step begin: 课堂列表 >>>>>>
+2021-10-19 19:34:38.959 | DEBUG    | httprunner.client:request:186 - client IP: 192.168.10.146, Port: 49679
+2021-10-19 19:34:38.959 | DEBUG    | httprunner.client:request:194 - server IP: 121.36.22.149, Port: 443
+2021-10-19 19:34:38.960 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : GET
+url      : https://courseapi.tongshike.cn/wisdomClassroom/getClassroomList?ocId=33988&classId=&teacherId=7449240&status=&pageNum=1&pageSize=10&lang=zh
+headers  : {
+    "User-Agent": "python-requests/2.26.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "A0D54F0F817F084C62383ED695FF947E",
+    "Content-Type": "application/json",
+    "HRUN-Request-ID": "HRUN-9b6e66fd-eb80-4c60-90c7-33bed01417f8-278712"
+}
+cookies  : {}
+body     : None
+
+2021-10-19 19:34:38.962 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Tue, 19 Oct 2021 11:34:39 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "total": 4,
+    "teacherName": "CqgAutotea",
+    "list": [
+        {
+            "id": 1625,
+            "title": "09-24 星期五 17:38 课堂",
+            "userId": 7449240,
+            "createTime": 1632476268000,
+            "ocId": 33988,
+            "status": 0,
+            "beginTime": 1632476268000,
+            "classes": [
+                {
+                    "classId": 357175,
+                    "className": "测试班级3"
+                },
+                {
+                    "classId": 357174,
+                    "className": "测试班级2"
+                },
+                {
+                    "classId": 357173,
+                    "className": "测试班级1"
+                }
+            ],
+            "activityNum": 5,
+            "demonstrationNum": 1
+        },
+        {
+            "id": 1623,
+            "title": "09-24 星期五 17:35 课堂",
+            "userId": 7449240,
+            "createTime": 1632476037000,
+            "ocId": 33988,
+            "status": 0,
+            "beginTime": 1632476037000,
+            "classes": [
+                {
+                    "classId": 357175,
+                    "className": "测试班级3"
+                },
+                {
+                    "classId": 357174,
+                    "className": "测试班级2"
+                },
+                {
+                    "classId": 357173,
+                    "className": "测试班级1"
+                }
+            ],
+            "activityNum": 0,
+            "demonstrationNum": 0
+        },
+        {
+            "id": 1622,
+            "title": "09-24 星期五 17:34 课堂",
+            "userId": 7449240,
+            "createTime": 1632475988000,
+            "ocId": 33988,
+            "status": 0,
+            "beginTime": 1632475988000,
+            "classes": [
+                {
+                    "classId": 357175,
+                    "className": "测试班级3"
+                },
+                {
+                    "classId": 357174,
+                    "className": "测试班级2"
+                },
+                {
+                    "classId": 357173,
+                    "className": "测试班级1"
+                }
+            ],
+            "activityNum": 0,
+            "demonstrationNum": 0
+        },
+        {
+            "id": 1632,
+            "title": "09-29 星期三 15:57 课堂",
+            "userId": 7449240,
+            "createTime": 1632902160000,
+            "ocId": 33988,
+            "status": 1,
+            "classes": [
+                {
+                    "classId": 357175,
+                    "className": "测试班级3"
+                },
+                {
+                    "classId": 357174,
+                    "className": "测试班级2"
+                },
+                {
+                    "classId": 357173,
+                    "className": "测试班级1"
+                }
+            ],
+            "activityNum": 0,
+            "demonstrationNum": 0
+        }
+    ],
+    "ocName": "自动化测试课程"
+}
+
+2021-10-19 19:34:38.964 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 247.68 ms, response_length: 0 bytes
+2021-10-19 19:34:38.964 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2021-10-19 19:34:38.964 | INFO     | httprunner.runner:__run_step:304 - run step end: 课堂列表 <<<<<<
+
+2021-10-19 19:34:38.964 | INFO     | httprunner.runner:__run_step:292 - run step begin: /wisdomClassroom/add >>>>>>
+2021-10-19 19:34:39.020 | DEBUG    | httprunner.client:request:186 - client IP: 192.168.10.146, Port: 49679
+2021-10-19 19:34:39.020 | DEBUG    | httprunner.client:request:194 - server IP: 121.36.22.149, Port: 443
+2021-10-19 19:34:39.020 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : POST
+url      : https://courseapi.tongshike.cn/wisdomClassroom/add?lang=zh
+headers  : {
+    "User-Agent": "python-requests/2.26.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "A0D54F0F817F084C62383ED695FF947E",
+    "Content-Type": "application/json",
+    "HRUN-Request-ID": "HRUN-9b6e66fd-eb80-4c60-90c7-33bed01417f8-278964",
+    "Content-Length": "292"
+}
+cookies  : {}
+body     : {
+    "id": 0,
+    "ocId": "33988",
+    "status": 0,
+    "title": "2021-10-19 19:34:38 课堂",
+    "classes": [
+        {
+            "classId": "357173",
+            "className": "测试班级3"
+        },
+        {
+            "classId": "357174",
+            "className": "测试班级2"
+        },
+        {
+            "classId": "357175",
+            "className": "测试班级1"
+        }
+    ]
+}
+
+2021-10-19 19:34:39.021 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Tue, 19 Oct 2021 11:34:39 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 1,
+    "message": "成功",
+    "result": {
+        "id": 1690
+    }
+}
+
+2021-10-19 19:34:39.021 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 54.62 ms, response_length: 0 bytes
+2021-10-19 19:34:39.021 | INFO     | httprunner.response:extract:179 - extract mapping: {'classroomid': 1690}
+2021-10-19 19:34:39.021 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2021-10-19 19:34:39.021 | INFO     | httprunner.response:validate:249 - assert body.message equal 成功(str)	==> pass
+2021-10-19 19:34:39.022 | INFO     | httprunner.runner:__run_step:304 - run step end: /wisdomClassroom/add <<<<<<
+
+2021-10-19 19:34:39.022 | INFO     | httprunner.runner:__run_step:292 - run step begin: 删除课堂 >>>>>>
+2021-10-19 19:34:39.095 | DEBUG    | httprunner.client:request:186 - client IP: 192.168.10.146, Port: 49679
+2021-10-19 19:34:39.095 | DEBUG    | httprunner.client:request:194 - server IP: 121.36.22.149, Port: 443
+2021-10-19 19:34:39.096 | DEBUG    | httprunner.client:log_print:40 - 
+================== request details ==================
+method   : DELETE
+url      : https://courseapi.tongshike.cn/wisdomClassroom/delete/1690?lang=zh
+headers  : {
+    "User-Agent": "python-requests/2.26.0",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept": "*/*",
+    "Connection": "keep-alive",
+    "Authorization": "A0D54F0F817F084C62383ED695FF947E",
+    "Content-Type": "application/json",
+    "HRUN-Request-ID": "HRUN-9b6e66fd-eb80-4c60-90c7-33bed01417f8-279023",
+    "Content-Length": "0"
+}
+cookies  : {}
+body     : None
+
+2021-10-19 19:34:39.096 | DEBUG    | httprunner.client:log_print:40 - 
+================== response details ==================
+status_code : 200
+headers  : {
+    "Server": "nginx",
+    "Date": "Tue, 19 Oct 2021 11:34:39 GMT",
+    "Content-Type": "application/json;charset=UTF-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "1; mode=block",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0"
+}
+cookies  : {}
+encoding : UTF-8
+content_type : application/json;charset=UTF-8
+body     : {
+    "code": 1,
+    "message": "成功"
+}
+
+2021-10-19 19:34:39.096 | INFO     | httprunner.client:request:217 - status_code: 200, response_time(ms): 71.73 ms, response_length: 0 bytes
+2021-10-19 19:34:39.096 | INFO     | httprunner.response:validate:249 - assert status_code equal 200(int)	==> pass
+2021-10-19 19:34:39.097 | INFO     | httprunner.response:validate:249 - assert body.message equal 成功(str)	==> pass
+2021-10-19 19:34:39.097 | INFO     | httprunner.runner:__run_step:304 - run step end: 删除课堂 <<<<<<
+
+2021-10-19 19:34:39.097 | INFO     | httprunner.runner:test_start:460 - generate testcase log: D:\ExamAuto\logs\9b6e66fd-eb80-4c60-90c7-33bed01417f8.run.log

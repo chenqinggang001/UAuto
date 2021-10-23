@@ -35,7 +35,7 @@ class TestOpenPaper(HttpRunner):
             .with_params(**{"examId":"${get_list($OpenPaperFromOrg,result.exam.examId)}","ip":get_host_ip(),"submitType":2,"token":""})
             .with_json(
                 {
-                    "userId":"${ENV(stu001_userId)}",
+                    "userId":"${ENV(stu001_userid)}",
                     "orgId": '${ENV(stu001_ocId)}'
                 }
             )

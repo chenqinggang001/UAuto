@@ -67,3 +67,6 @@ def wite_env():
         os.environ[k] = str(v)
 
 wite_env()
+
+def get_osenv(key):
+    return os.environ[key]
